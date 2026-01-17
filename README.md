@@ -1,6 +1,6 @@
 ## Minesweeper (Test Assignment)
 
-This project is a Minesweeper implementation built with React, Redux Toolkit, Vite, and styled-components.  
+This project is a Minesweeper implementation built with React (using the experimental **React Compiler**), Redux Toolkit, Vite, and styled-components.  
 It was created as a **test assignment intended to assess a developer’s baseline skill level**.
 
 ### Features
@@ -9,6 +9,7 @@ It was created as a **test assignment intended to assess a developer’s baselin
 - Recent results persisted in `localStorage`.
 - Redux state management, custom hooks, and typed utilities.
 - Vitest-based unit tests covering reducers and helper functions.
+- React Compiler enabled through the Babel plugin for improved render optimization (experimental).
 
 ### Getting Started
 Prerequisites:

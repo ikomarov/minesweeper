@@ -33,8 +33,11 @@ describe('gameSlice reducers', () => {
 
   it('resets the board on startGame', () => {
     const store = createStore();
+
     store.dispatch(startGame('medium'));
+
     const state = store.getState().game;
+
     expect(state.difficultyId).toBe('medium');
     expect(state.flagsLeft).toBe(state.config.mines);
     expect(state.boardReady).toBe(false);
@@ -42,22 +45,31 @@ describe('gameSlice reducers', () => {
 
   it('toggles flags and keeps counters in sync', () => {
     const store = createStore();
+
     store.dispatch(toggleFlag({ row: 0, col: 0 }));
+
     let state = store.getState().game;
+
     expect(state.board[0][0].flagged).toBe(true);
     expect(state.flagsLeft).toBe(state.config.mines - 1);
+
     store.dispatch(toggleFlag({ row: 0, col: 0 }));
     state = store.getState().game;
+
     expect(state.board[0][0].flagged).toBe(false);
     expect(state.flagsLeft).toBe(state.config.mines);
   });
 
   it('reveals a safe cell and starts the timer on the first click', () => {
     const store = createStore();
+
     vi.useFakeTimers();
     vi.setSystemTime(new Date('2025-01-01T00:00:00Z'));
+
     store.dispatch(revealCell({ row: 0, col: 0 }));
+
     const state = store.getState().game;
+
     expect(generateBoardMock).toHaveBeenCalledOnce();
     expect(state.boardReady).toBe(true);
     expect(state.status).toBe('running');
