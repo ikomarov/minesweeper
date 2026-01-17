@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import type {BoardState, Coordinates, GameStatus} from "../../types/game"
-import {Cell} from "./Cell"
+import type {BoardState, Coordinates, GameStatus} from "../types/game.ts"
+import {Cell} from "./Cell.tsx"
 
 interface BoardProps {
   board: BoardState;

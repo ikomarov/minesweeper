@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import type {GameStatus} from "../../types/game"
+import type {GameStatus} from "../types/game.ts"
 
 interface StatsDisplayProps {
   elapsed: number;

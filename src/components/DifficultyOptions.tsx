@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import type {Difficulty} from "../../types/game"
+import type {Difficulty} from "../types/game.ts"
 
 interface DifficultyOptionsProps {
   options: Difficulty[];

@@ -1,8 +1,8 @@
-import {DIFFICULTY_MAP} from "../../constants/difficulties"
-import {useAppSelector} from "../../hooks/useAppSelector"
-import {Panel} from "../dumb/Panel"
-import type {ResultViewModel} from "../dumb/ResultsList"
-import {ResultsList} from "../dumb/ResultsList"
+import {DIFFICULTY_MAP} from "../constants/difficulties.ts"
+import {useAppSelector} from "../hooks/useAppSelector.ts"
+import {Panel} from "../components/Panel.tsx"
+import type {ResultViewModel} from "../components/ResultsList.tsx"
+import {ResultsList} from "../components/ResultsList.tsx"
 
 export const ResultsPanel = () => {
   const results = useAppSelector((state) => state.game.results)

@@ -1,5 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components"
-import {GameContainer} from "./components/smart/GameContainer"
+import {GameContainer} from "./containers/GameContainer.tsx"
 
 export const App = () => (
   <>

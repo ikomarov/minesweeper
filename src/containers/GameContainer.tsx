@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import {DifficultySelector} from "./DifficultySelector"
-import {GameStats} from "./GameStats"
-import {GameBoard} from "./GameBoard"
-import {ResultsPanel} from "./ResultsPanel"
-import {useGameTimer} from "../../hooks/useGameTimer"
+import {DifficultySelector} from "./DifficultySelector.tsx"
+import {GameStats} from "./GameStats.tsx"
+import {GameBoard} from "./GameBoard.tsx"
+import {ResultsPanel} from "./ResultsPanel.tsx"
+import {useGameTimer} from "../hooks/useGameTimer.ts"
 
 export const GameContainer = () => {
   useGameTimer()

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import type {CellState, GameStatus} from "../../types/game"
+import type {CellState, GameStatus} from "../types/game.ts"
 
 interface CellProps {
   cell: CellState;

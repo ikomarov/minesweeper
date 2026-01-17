@@ -1,10 +1,10 @@
-import {DIFFICULTIES} from "../../constants/difficulties"
-import {startGame} from "../../store/gameSlice"
-import type {DifficultyId} from "../../types/game"
-import {useAppDispatch} from "../../hooks/useAppDispatch"
-import {useAppSelector} from "../../hooks/useAppSelector"
-import {Panel} from "../dumb/Panel"
-import {DifficultyOptions} from "../dumb/DifficultyOptions"
+import {DIFFICULTIES} from "../constants/difficulties.ts"
+import {startGame} from "../store/gameSlice.ts"
+import type {DifficultyId} from "../types/game.ts"
+import {useAppDispatch} from "../hooks/useAppDispatch.ts"
+import {useAppSelector} from "../hooks/useAppSelector.ts"
+import {Panel} from "../components/Panel.tsx"
+import {DifficultyOptions} from "../components/DifficultyOptions.tsx"
 
 export const DifficultySelector = () => {
   const dispatch = useAppDispatch()

@@ -1,9 +1,9 @@
-import {Board} from "../dumb/Board"
-import {Panel} from "../dumb/Panel"
-import {useAppSelector} from "../../hooks/useAppSelector"
-import {useAppDispatch} from "../../hooks/useAppDispatch"
-import {revealCell, toggleFlag} from "../../store/gameSlice"
-import type {Coordinates} from "../../types/game"
+import {Board} from "../components/Board.tsx"
+import {Panel} from "../components/Panel.tsx"
+import {useAppSelector} from "../hooks/useAppSelector.ts"
+import {useAppDispatch} from "../hooks/useAppDispatch.ts"
+import {revealCell, toggleFlag} from "../store/gameSlice.ts"
+import type {Coordinates} from "../types/game.ts"
 
 export const GameBoard = () => {
   const dispatch = useAppDispatch()

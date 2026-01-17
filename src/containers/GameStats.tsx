@@ -1,8 +1,8 @@
-import {useAppDispatch} from "../../hooks/useAppDispatch"
-import {useAppSelector} from "../../hooks/useAppSelector"
-import {startGame} from "../../store/gameSlice"
-import {StatsDisplay} from "../dumb/StatsDisplay"
-import {Panel} from "../dumb/Panel"
+import {useAppDispatch} from "../hooks/useAppDispatch.ts"
+import {useAppSelector} from "../hooks/useAppSelector.ts"
+import {startGame} from "../store/gameSlice.ts"
+import {StatsDisplay} from "../components/StatsDisplay.tsx"
+import {Panel} from "../components/Panel.tsx"
 
 export const GameStats = () => {
   const dispatch = useAppDispatch()
